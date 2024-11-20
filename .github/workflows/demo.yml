@@ -8,3 +8,7 @@ jobs:
     demo:
         name: Demo son nom
         runs-on: ubuntu-latest
+
+        steps:
+            - name: Première étape
+              run: echo Hello !
