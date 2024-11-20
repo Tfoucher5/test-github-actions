@@ -1,0 +1,10 @@
+name: Démonstration Pipeline CI
+
+on:
+    push:
+        branches: [ "main"]
+
+jobs:
+    demo:
+        name: Demo son nom
+        runs-on: ubuntu-latest
