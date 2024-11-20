@@ -11,4 +11,16 @@ jobs:
 
         steps:
             - name: Première étape
-              run: echo Hello !
+              run: echo Hello ! 
+
+            - name: Script plus complexe
+              run: |
+                echo Voici
+                echo un script plus compliqué
+        
+    test:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Etape 2
+              run: echo L'Étape 2
