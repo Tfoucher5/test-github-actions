@@ -23,5 +23,8 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
+            - name: Récupération code source
+              uses: actions/checkout@v4
+              
             - name: Etape 2
               run: echo "L'Étape 2"
