@@ -9,8 +9,13 @@ jobs:
         name: Demo son nom
         runs-on: ubuntu-latest
 
+        strategy:
+            fail-fast: true
+            matrix:
+                php: [8.1, 8.2, 8.3]
+
         steps:
-            - name: Première étape
+            - name: Première étape - ${{ matrix.php }}
               run: echo Hello ! 
 
             - name: Script plus complexe
@@ -25,6 +30,6 @@ jobs:
         steps:
             - name: Récupération code source
               uses: actions/checkout@v4
-              
+
             - name: Etape 2
               run: echo "L'Étape 2"
